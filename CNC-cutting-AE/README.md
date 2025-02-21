@@ -23,7 +23,7 @@ Reference: https://www.ndt.net/article/ewgae2024/papers/1041_manuscript.pdf
 - Material: 1.4305
 - Dimensions: 280 x 150 x 30 mm
 
-The material was cut along its width with various tools of differing conditions and under same process parameters.
+The material was cut row by row along its width with various tools of differing conditions and under same process parameters.
 
 ## Measurement
 
@@ -42,7 +42,7 @@ Each measurement consists of two binary files:
 
 - The binary files consist of int16 values, which form an array that represents the raw structure-borne noise of the CNC cutting process
 - Each binary belongs to one sensor
-- In each measurement, eight to nine cutting processes were monitored.
-  - Cutting process 1-3: Structure-borne noise of cutting steel, using tool of healthy condition
-  - Cutting process 4-6: Structure-borne noise of cutting steel, using tool of worn-out condition
-  - Cutting process 7-8|9: Structure-borne noise of cutting steel with holes (as simulated defects), using tool of healthy condition
+- Each measurement contains 7 or 9 cutting processes that were monitored.
+  - First 2 or 3 processes describe cutting steel, using a tool of healthy condition
+  - Next 2 or 3 processes describe cutting steel, using a tool of worn-out condition
+  - Last 3 process describe cutting steel with holes (as simulated defects), using a tool of healthy condition
